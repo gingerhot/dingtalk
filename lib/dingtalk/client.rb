@@ -85,16 +85,17 @@ module Dingtalk
     end
 
     private
-      def aes_key
-        Base64.decode64(Dingtalk.suite_aes_key + '=')
-      end
 
-      def timestamp
-        Time.now.to_i.to_s
-      end
+    def aes_key
+      Base64.decode64(Dingtalk.suite_aes_key + '=')
+    end
 
-      def nonce
-        SecureRandom.hex
-      end
+    def timestamp
+      Time.now.to_i.to_s
+    end
+
+    def nonce
+      SecureRandom.hex
+    end
   end
 end

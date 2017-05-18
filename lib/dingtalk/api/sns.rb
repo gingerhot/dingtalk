@@ -39,13 +39,14 @@ module Dingtalk
       end
 
       private
-        def default_params
-          {}
-        end
 
-        def base_url
-          'sns'
-        end
+      def default_params
+        {}
+      end
+
+      def base_url
+        'sns'
+      end
     end
   end
 end

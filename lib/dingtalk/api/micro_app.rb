@@ -6,11 +6,10 @@ module Dingtalk
       end
 
       private
-        def base_url
-          'microapp'
-        end
+
+      def base_url
+        'microapp'
+      end
     end
   end
 end
-
-

@@ -6,9 +6,10 @@ module Dingtalk
       end
 
       private
-        def base_url
-          'attendance'
-        end
+
+      def base_url
+        'attendance'
+      end
     end
   end
 end

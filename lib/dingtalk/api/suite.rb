@@ -70,13 +70,14 @@ module Dingtalk
       end
 
       private
-        def default_params
-          {}
-        end
 
-        def base_url
-          'service'
-        end
+      def default_params
+        {}
+      end
+
+      def base_url
+        'service'
+      end
     end
   end
 end

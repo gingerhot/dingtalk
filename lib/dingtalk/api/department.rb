@@ -18,9 +18,10 @@ module Dingtalk
       end
 
       private
-        def base_url
-          'department'
-        end
+
+      def base_url
+        'department'
+      end
     end
   end
 end

@@ -3,7 +3,7 @@ module Dingtalk
     attr_accessor :config
 
     def configure
-    yield self.config ||= Config.new
+      yield self.config ||= Config.new
     end
 
     def dingtalk_redis

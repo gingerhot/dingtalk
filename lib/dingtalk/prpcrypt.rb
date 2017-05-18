@@ -34,13 +34,14 @@ module Dingtalk
     end
 
     private
-      def handle_cipher(action, aes_key, text)
-        cipher = OpenSSL::Cipher.new('AES-256-CBC')
-        cipher.send(action)
-        cipher.padding = 0
-        cipher.key     = aes_key
-        cipher.iv      = aes_key[0...16]
-        cipher.update(text) + cipher.final
-      end
+
+    def handle_cipher(action, aes_key, text)
+      cipher = OpenSSL::Cipher.new('AES-256-CBC')
+      cipher.send(action)
+      cipher.padding = 0
+      cipher.key     = aes_key
+      cipher.iv      = aes_key[0...16]
+      cipher.update(text) + cipher.final
+    end
   end
 end

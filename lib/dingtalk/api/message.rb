@@ -6,9 +6,10 @@ module Dingtalk
       end
 
       private
-        def base_url
-          'message'
-        end
+
+      def base_url
+        'message'
+      end
     end
   end
 end

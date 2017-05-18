@@ -27,10 +27,10 @@ module Dingtalk
       end
 
       private
-        def base_url
-          'user'
-        end
+
+      def base_url
+        'user'
+      end
     end
   end
 end
-

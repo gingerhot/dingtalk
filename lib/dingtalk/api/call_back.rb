@@ -19,18 +19,19 @@ module Dingtalk
       end
 
       private
-        def params(call_back_tag, url)
-          {
-            call_back_tag: call_back_tag,
-            token: Dingtalk.suite_token,
-            aes_key: Dingtalk.suite_aes_key,
-            url: url
-          }
-        end
 
-        def base_url
-          'call_back'
-        end
+      def params(call_back_tag, url)
+        {
+          call_back_tag: call_back_tag,
+          token: Dingtalk.suite_token,
+          aes_key: Dingtalk.suite_aes_key,
+          url: url
+        }
+      end
+
+      def base_url
+        'call_back'
+      end
     end
   end
 end
